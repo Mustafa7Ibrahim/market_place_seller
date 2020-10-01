@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "570212154944",
+    "firebase_url": "https://market-place-c4bdc.firebaseio.com",
+    "project_id": "market-place-c4bdc",
+    "storage_bucket": "market-place-c4bdc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570212154944:android:fc9694c4986782eb67e9a5",
+        "android_client_info": {
+          "package_name": "com.example.market_place"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "570212154944-c2v2cbbrg9c74926j8fca78ihf79sg5c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.market_place",
+            "certificate_hash": "6ea278a9d61df45e5ab26e4d22f8895869947e63"
+          }
+        },
+        {
+          "client_id": "570212154944-a67tdv1j570pscsogdb0t5oo5r19n9bu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.market_place",
+            "certificate_hash": "c446ba9ef521192b8072d5fb8f42464ff1ea2fe0"
+          }
+        },
+        {
+          "client_id": "570212154944-j1b6lkdrhm12r6t1s9ktbarpr1au7e6f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtWRyqHtcaYS4VWY1Rvy0TNGL7a6KOBOM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "570212154944-j1b6lkdrhm12r6t1s9ktbarpr1au7e6f.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "570212154944-f9lgmu4rrmg9gath430johbsqvk35s0l.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.marketPlace"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570212154944:android:dd016d9fd8f109bf67e9a5",
+        "android_client_info": {
+          "package_name": "com.example.market_place_seller"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "570212154944-4dh73vbb8sj0q9ui8nkigm7ug1k63lbm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.market_place_seller",
+            "certificate_hash": "6ea278a9d61df45e5ab26e4d22f8895869947e63"
+          }
+        },
+        {
+          "client_id": "570212154944-j1b6lkdrhm12r6t1s9ktbarpr1au7e6f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtWRyqHtcaYS4VWY1Rvy0TNGL7a6KOBOM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "570212154944-j1b6lkdrhm12r6t1s9ktbarpr1au7e6f.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "570212154944-f9lgmu4rrmg9gath430johbsqvk35s0l.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.marketPlace"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
