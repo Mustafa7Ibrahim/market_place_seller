@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:market_place_seller/constant/decoration.dart';
 import 'package:market_place_seller/models/product_model.dart';
 
 class Product extends StatelessWidget {
@@ -8,22 +9,30 @@ class Product extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(12.0),
-      margin: EdgeInsets.all(6.0),
+      padding: EdgeInsets.all(8.0),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(12.0),
-        color: Theme.of(context).appBarTheme.color,
-        // boxShadow: [shadow],
+        // borderRadius: BorderRadius.circular(18.0),
+        boxShadow: [shadow],
       ),
       child: Row(
         children: [
-          Expanded(
-            flex: 1,
-            child: Image.network(productModel.productImages.first),
+          Flexible(
+            flex: 2,
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(18),
+              child: Image.network(
+                productModel.productImages.first,
+                fit: BoxFit.cover,
+                height: 75,
+                width: 75,
+              ),
+            ),
           ),
+          SizedBox(width: 14.0),
           Expanded(
-            flex: 3,
+            flex: 4,
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
@@ -43,7 +52,9 @@ class Product extends StatelessWidget {
           ),
           Expanded(
             flex: 1,
-            child: Center(child: Text(productModel.price)),
+            child: Center(
+              child: Text('\$${productModel.price}'),
+            ),
           ),
         ],
       ),

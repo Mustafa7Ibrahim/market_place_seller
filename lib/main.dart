@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:market_place_seller/screens/authentication/authentication.dart';
+import 'package:market_place_seller/screens/product_list/products_list.dart';
 import 'package:market_place_seller/wrapper.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -26,13 +27,15 @@ class App extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryColor: Colors.white,
+        primaryColor: Colors.green,
         accentColor: Colors.green,
         brightness: Brightness.light,
         appBarTheme: AppBarTheme(
-          brightness: Brightness.light,
-          centerTitle: true,
-        ),
+            brightness: Brightness.light,
+            color: Colors.white,
+            iconTheme: IconThemeData(color: Colors.black),
+            centerTitle: true,
+            elevation: 0.0),
       ),
       home: Scaffold(
         body: FutureBuilder(
@@ -43,7 +46,7 @@ class App extends StatelessWidget {
             }
 
             if (snapshot.connectionState == ConnectionState.done) {
-              return sellerId != null ? Wrapper(id: sellerId) : Authentication();
+              return sellerId != null ? ProductsList() : Authentication();
             }
 
             return Center(child: CircularProgressIndicator(backgroundColor: Colors.green));
