@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:market_place_seller/screens/authentication/authentication.dart';
 import 'package:market_place_seller/screens/product_list/products_list.dart';
-import 'package:market_place_seller/wrapper.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() async {

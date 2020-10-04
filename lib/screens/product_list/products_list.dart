@@ -62,7 +62,7 @@ class _ProductsListState extends State<ProductsList> {
                 onClosed: null,
                 closedElevation: 0.0,
                 closedBuilder: (context, action) => Product(snapshot.data[index]),
-                openBuilder: (context, action) => Container(),
+                openBuilder: (context, action) => AddNewProduct(product: snapshot.data[index]),
               );
             },
           );
